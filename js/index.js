@@ -39,4 +39,57 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+//nav bar
+let links = document.querySelectorAll('a');
+links[0].textContent = siteContent["nav"]["nav-item-1"];
+links[1].textContent = siteContent["nav"]["nav-item-2"];
+links[2].textContent = siteContent["nav"]["nav-item-3"];
+links[3].textContent = siteContent["nav"]["nav-item-4"];
+links[4].textContent = siteContent["nav"]["nav-item-5"];
+links[5].textContent = siteContent["nav"]["nav-item-6"];
+//the round image
+let snippet_image = document.getElementById("cta-img");
+snippet_image.setAttribute('src',siteContent["cta"]["img-src"]);
+//DOM IS AWESOME W/ BUTTON
+let DOM_AWESOME = document.querySelector("h1");
+DOM_AWESOME.textContent = siteContent["cta"]["h1"];
+let start_button = document.querySelector("button");
+start_button.textContent = siteContent["cta"]["button"];
+//middle image
+let middle_image = document.getElementById("middle-img");
+middle_image.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+//text above middle image
+let top_content_title = document.querySelectorAll("h4");
+top_content_title[0].textContent= siteContent["main-content"]["features-h4"];
+top_content_title[1].textContent= siteContent["main-content"]["about-h4"];
+
+let top_text = document.querySelectorAll(".top-content p");
+top_text[0].textContent = siteContent["main-content"]["features-content"];
+top_text[1].textContent = siteContent["main-content"]["about-content"];
+
+//text below middle image
+let bottom_content_title = document.querySelectorAll(".bottom-content h4");
+bottom_content_title[0].textContent= siteContent["main-content"]["services-h4"];
+bottom_content_title[1].textContent= siteContent["main-content"]["product-h4"];
+bottom_content_title[2].textContent= siteContent["main-content"]["vision-h4"];
+
+let bottom_text = document.querySelectorAll(".bottom-content p");
+bottom_text[0].textContent = siteContent["main-content"]["services-content"];
+bottom_text[1].textContent = siteContent["main-content"]["product-content"];
+bottom_text[2].textContent = siteContent["main-content"]["vision-content"];
+
+//contact info
+let contact_info = document.querySelector(".contact h4");
+contact_info.textContent = siteContent["contact"]["contact-h4"];
+
+let contact_p = document.querySelectorAll(".contact p");
+contact_p[0].textContent = siteContent["contact"]["address"];
+contact_p[1].textContent = siteContent["contact"]["phone"];
+contact_p[2].textContent = siteContent["contact"]["email"];
+
+
+
+//footer
+let the_footer = document.querySelector('footer');
+the_footer.append(siteContent['footer']['copyright']);
